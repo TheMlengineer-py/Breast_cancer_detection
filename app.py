@@ -22,10 +22,10 @@ def predict_api():
     output=round(model.predict(new_data)[0])
     if output == 1:
         # val_ = 'Yes'
-        output = 'Malignant'
+        output = 'Malignant_tumor'
     else:
         # val_ = 'no'
-        output = 'Benign'
+        output = 'Benign_tumor'
     return jsonify(output)
 
 @app.route('/predict',methods=['POST'])
@@ -39,12 +39,12 @@ def predict():
     # print(output[0])
     if round(output) == 1:
         val_ = 'Yes'
-        output = 'Malignant'
+        output = 'Malignant_tumor'
     else:
         val_ = 'no'
-        output = 'Benign'
+        output = 'Benign_tumor'
 
-    return render_template('index.html', prediction_text="Model Predict : {0}, there is {1}.".format(val_, output))
+    return render_template('index.html', prediction_text="Model Predict : {0}, this is {1}.".format(val_, output))
 
 
 if __name__ == "__main__":
