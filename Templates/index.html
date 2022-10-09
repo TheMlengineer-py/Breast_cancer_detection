@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html >
-<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
 <head>
   <meta charset="UTF-8">
     <title>Breast Cancer Prediction System</title>
@@ -21,20 +21,23 @@
     
     <form class="form-signin col-sm-12 col-12" action="{{ url_for('predict')}}" method="post">
         <h1 class="h3 mb-4 font-weight-bold mt-4">Breast Cancer Prediction System</h1>
+
+        <h1 class="h3 mb-4 font-weight-Verdana mt-4">The application makes prediction using the numerical medical diagnotics records</h1>
+
         
-        <input type="text" name="concave points_worst" id="concave points_worst" class="form-control mb-3" placeholder="concave points_worst" required="" autofocus="">
-        <input type="text" name="perimeter_worst" id="perimeter_worst" class="form-control mb-3" placeholder="perimeter_worst" required="" autofocus="">
-        <input type="text" name="radius_worst" id="radius_worst" class="form-control mb-3" placeholder="radius_worst" required="" autofocus="">
-        <input type="text" name="concave points_mean" id="concave points_mean" class="form-control mb-3" placeholder="concave points_mean" required="" autofocus="">
-        <input type="text" name="perimeter_mean" id="perimeter_mean" class="form-control mb-3" placeholder="perimeter_mean" required="" autofocus="">
-        <input type="text" name="radius_mean" id="radius_mean" class="form-control mb-3" placeholder="radius_mean" required="" autofocus="">
-        <input type="text" name="area_worst" id="area_worst" class="form-control mb-3" placeholder="area_worst" required="" autofocus="">
-        <input type="text" name="concavity_mean" id="concavity_mean" class="form-control mb-3" placeholder="concavity_mean" required="" autofocus="">
-        <input type="text" name="concavity_worst" id="concavity_worst" class="form-control mb-3" placeholder="concavity_worst" required="" autofocus="">
+        <input type="text" name="concave points worst" id="concave points worst" class="form-control mb-3" placeholder="concave points worst" required="" autofocus="">
+        <input type="text" name="perimeter worst" id="perimeter worst" class="form-control mb-3" placeholder="perimeter worst" required="" autofocus="">
+        <input type="text" name="radius worst" id="radius worst" class="form-control mb-3" placeholder="radius worst" required="" autofocus="">
+        <input type="text" name="concave points mean" id="concave points mean" class="form-control mb-3" placeholder="concave points mean" required="" autofocus="">
+        <input type="text" name="perimeter mean" id="perimeter mean" class="form-control mb-3" placeholder="perimeter mean" required="" autofocus="">
+        <input type="text" name="radius mean" id="radius mean" class="form-control mb-3" placeholder="radius mean" required="" autofocus="">
+        <input type="text" name="area worst" id="area worst" class="form-control mb-3" placeholder="area worst" required="" autofocus="">
+        <input type="text" name="area worst" id="area worst" class="form-control mb-3" placeholder="area worst" required="" autofocus="">
+        <input type="text" name="concavity worst" id="concavity worst" class="form-control mb-3" placeholder="concavity worst" required="" autofocus="">
         
         
 
-        <button class="btn btn-lg btn-primary btn-block mb-4" type="submit">Predict</button>
+        <button class="btn btn-lg btn-primary btn-block mb-4" type="submit">Breast Cancer Prediction</button>
     </form>
 
 </div>
